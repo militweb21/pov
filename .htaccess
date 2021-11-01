@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Protected Site"
+AuthUserFile /militweb21/github/pov/.htpasswd
+require valid-user
