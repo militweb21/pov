@@ -1,189 +1,31 @@
-<doctype html5>
+<!DOCTYPE html>
+<html>
 <head>
-    <style>
-        body {
-            text-align: center;
-            
-        }
-       .container1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-        
-}
-
-img1 {
-  max-width: 100%
-}
-
-.image1 {
-  flex-basis: 40%
-}
-
-.text1 {
-  font-size: 20px;
-  padding-left: 20px;
-    text-align: center;
-    margin-right: 20;
-    margin-left: 20;
-}
-        
-        .vimg1 {
-            margin-left: 0px;
-        
-        }
-       .vimg2 {
-           margin-left: 30
-           
-            
-        }
-        
-        .toppicks {
-            text-align: center;
-            background-image: url(pics/BG/top-picks-logo.png);
-            
-            
-        
-            
-        }
-        
-    
-        .picbgw {
-            box-shadow: inset 0 0 0 1000px rgba(255, 255, 255,.8);
-            color: black;
-            background-size:;
-            background-position:;
-            margin: 50px;
-            
-        }
-        
-        .picli1 {
-            opacity: %;
-        }
-    </style>
-    </head>
-    <body>
-        <header>
-        <h1>Welcome</h1>
-        </header>
-        
-        <div class="toppicks">
-            <div class="picbgw">
-
-    <h2>Top Pics</h2>
-                <div class="picli1">
-        <div class="container1">
-      <div class="text1">
-          <div>
-        <img alt="" src="pics/set1/Luqman/IMG_0037.JPG" width="400" height="255">
-              <p></p>
-        </div>
-     
-       
-          </div>
-      <div class="image1">
-          <div>
-        <img src="pics/set1/Luqman/IMG_0046.JPG" width="400" height="255">
-              <p></p>
-        </div>
-        </div>
-            </div>
-            
-        
-        <div class="container1">
-      <div class="text1">
-          <div>
-        <img src="pics/set1/Luqman/IMG_0049.JPG" width="400" height="255">
-              <p></p>
-        </div>
-     
-       
-          </div>
-      <div class="image1">
-          
-        <img class="vimg1" src="pics/set1/Omar/IMG_0043.JPG" width="185" height="255">
-              
-              <img class="vimg2" src="pics/set1/Girls/IMG_0020.JPG" width="180" height="255">
-              <p></p>
-        
-        </div>
-            </div>
-        <div class="container1">
-      <div class="text1">
-          <div>
-        <img alt="" src="pics/set1/Girls/IMG_0010.JPG" width="400" height="255">
-              <p></p>
-        </div>
-     
-       
-          </div>
-      <div class="image1">
-          <div>
-        <img src="pics/set1/Girls/IMG_0017.JPG"S width="400" height="255">
-              <p></p>
-        </div>
-        </div>
-            </div>
-        <div class="container1">
-      <div class="text1">
-          <div>
-        <img alt="" src="pics/set1/Girls/IMG_0005.JPG" width="400" height="255">
-              <p></p>
-        </div>
-     
-       
-          </div>
-      <div class="image1">
-           
-        <img class="vimg1" src="pics/set1/Girls/IMG_0012.JPG" width="185" height="255">
-              
-              <img class="vimg2" src="pics/set1/Luqman/IMG_0011.JPG" width="180" height="255">
-              <p></p>
-        </div>
-        </div>
-    
-        
-        <div class="container1">
-      <div class="text1">
-          <div>
-        <img alt="" src="pics/set1/Imaan/IMG_0068.JPG" width="400" height="255">
-              <p></p>
-        </div>
-     
-       
-          </div>
-      <div class="image1">
-           
-        <img class="vimg1" src="pics/set1/Luqman/IMG_0078.JPG" width="185" height="255">
-              
-              <img class="vimg2" src="pics/set1/Luqman/IMG_0065.JPG" width="180" height="255">
-              <p></p>
-        </div>
-        </div>
-        
-        <div class="container1">
-      <div class="text1">
-          <div>
-        <img alt="" src="pics/set1/Omar/IMG_0041.JPG" width="400" height="255">
-              <p></p>
-        </div>
-     
-       
-          </div>
-      <div class="image1">
-          <div>
-        <img src="pics/set1/Omar/IMG_0070.JPG" width="400" height="255">
-              <p></p>
-        </div>
-        </div>
-            </div>
-            </div>
-        </div>
-        </div>
-        
-        
-        <button><a href="https://drive.google.com/drive/folders/1neNKVA3mp8oXn9j_TzQFWi5WEGN-MnOq?usp=sharing">View Full Quality</a></button>
-            
-            
-    </body>
-</doctype>
+ <title>Password</title>
+ <style>
+  body {
+   background-color: lightblue;
+   padding: 30px;
+  }
+ </style>
+ <script>
+  function checkPassword() {
+   var password = document.getElementById("passwordBox");
+   var passwordText = password.value;
+   if(passwordText == "Khan1") {
+    return true;
+   }
+   alert("Access denied! Incorrect password!");
+   return false;
+   }
+ </script>
+</head>
+<body>
+ <p style="font-size: 30pt;">Welcome</p>
+ <p>Please enter the password to view this website.</p>
+ <p>Password:<input id="passwordBox" type="password"/></p>
+ <a href="khan.html" onclick="return checkPassword();">
+  Click here to submit password and view website
+ </a>
+</body>
+</html>
